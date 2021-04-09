@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a01af6b-be56-42f7-b43c-ec3ae8b0306f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository\maven" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qsAVp9PmIFpgZEcfqpnPhq93Bp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/arg_wm" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\Raster\data\arg_wm" />
+      <recent name="E:\github\Raster\data\landsat" />
+      <recent name="E:\github项目\Raster\geotrellis\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CreateNDWIPng">
+    <configuration name="CreateNDVIPng" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="io.CreateNDVIPng" />
+      <module name="geotrellis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNDWIPng" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="io.CreateNDWIPng" />
+      <module name="geotrellis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IngestImage" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="io.IngestImage" />
+      <module name="geotrellis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaskBandsRandGandNIR" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="io.MaskBandsRandGandNIR" />
+      <module name="geotrellis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="geotrellis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CreateNDWIPng" />
+        <item itemvalue="Application.CreateNDVIPng" />
+        <item itemvalue="Application.MaskBandsRandGandNIR" />
+        <item itemvalue="Application.IngestImage" />
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a01af6b-be56-42f7-b43c-ec3ae8b0306f" name="Default Changelist" comment="" />
+      <created>1617857951934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617857951934</updated>
+      <workItem from="1617857953863" duration="846000" />
+      <workItem from="1617865029416" duration="6779000" />
+      <workItem from="1617877664602" duration="6515000" />
+      <workItem from="1617933262135" duration="4855000" />
+      <workItem from="1617942169697" duration="849000" />
+      <workItem from="1617944635623" duration="5279000" />
+      <workItem from="1617952727102" duration="4571000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 成功跑通数据">
+      <created>1617952800941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617952800941</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 成功跑通数据">
+      <created>1617956910147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617956910147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 成功跑通数据">
+      <created>1617957173195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617957173195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 成功跑通数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 成功跑通数据" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="371" y="95" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1617946850155">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="95" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1617946850155" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617959948448">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1617959948448" />
+    <state x="260" y="18" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1617865228928">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="260" y="18" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" timestamp="1617865228928" />
+    <state x="233" y="0" key="CommitChangelistDialog2" timestamp="1617957172679">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1617957172679" />
+    <state x="421" y="56" key="FileChooserDialogImpl" timestamp="1617881497696">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="56" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617881497696" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1617950083966">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1617950083966" />
+    <state x="221" y="75" key="IDE.errors.dialog" timestamp="1617955533063">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="221" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1617955533063" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1617959631513">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617959631513" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1617957184817">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617957184817" />
+    <state x="468" y="74" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617952764398">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="468" y="74" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1280.680@0.0.1280.680" timestamp="1617952764398" />
+    <state x="671" y="140" width="605" height="536" key="find.popup" timestamp="1617885505391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="671" y="140" width="605" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1617885505391" />
+    <state x="28" y="0" key="new project wizard" timestamp="1617865142184">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1617865142184" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/geotrellis/src/main/scala/main.scala</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
