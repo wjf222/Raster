@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Raster.iml" filepath="$PROJECT_DIR$/.idea/Raster.iml" />
-      <module fileurl="file://$PROJECT_DIR$/geotrellis/geotrellis.iml" filepath="$PROJECT_DIR$/geotrellis/geotrellis.iml" />
-    </modules>
-  </component>
-</project>
