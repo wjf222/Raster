@@ -5,6 +5,8 @@ import geotrellis.raster.io.geotiff._
 import geotrellis.raster.render._
 import com.typesafe.config.ConfigFactory
 
+import scala.io.StdIn
+
 /**
  *
  */
@@ -35,5 +37,6 @@ object CreateNDVIPng {
     // and write the PNG to disk.
     println("Rendering PNG and saving to disk...")
     ndvi.renderPng(colorMap).write(ndviPath)
+    StdIn.readLine()
   }
 }

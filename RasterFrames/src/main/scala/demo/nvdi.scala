@@ -8,6 +8,8 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.udf
 import astraea.spark.rasterframes._
 
+import scala.io.StdIn
+
 object nvdi {
   def main(args: Array[String]): Unit = {
     implicit val spark = SparkSession.builder().
@@ -44,7 +46,7 @@ object nvdi {
     val colors = ColorMap.fromQuantileBreaks(pr.tile.histogramDouble(), brownToGreen)
     // change writing location
     pr.tile.color(colors).renderPng().write("data/outputs/rf-ndvi.png")
-
+    StdIn.readLine()
     //For a georefrenced singleband greyscale image, could do: `GeoTiff(pr).write("ndvi.tiff")`
   }
 }

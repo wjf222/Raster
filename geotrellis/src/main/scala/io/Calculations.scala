@@ -1,7 +1,7 @@
 package io
 
 import geotrellis.raster._
-
+import geotrellis.raster.mapalgebra._
 /**
  * Object that can calculate ndvi and ndwi
  * @author xuanfenwang
