@@ -23,7 +23,7 @@ import java.io.File
 
 object IngestImage {
   //  val inputPath = "file://" + new File("data/arg_wm/DevelopedLand.tiff").getAbsolutePath
-  val inputPath = "data/r-g-nir.tif"
+  val inputPath = "data/SRTM_W_250m.tif"
   val outputPath = "data/catalog"
 
   //  val outputPath = ""
@@ -55,8 +55,9 @@ object IngestImage {
     // using a method implicitly added to SparkContext by
     // an implicit class available via the
     // "import geotrellis.spark.io.hadoop._ " statement.
-    val inputRdd: RDD[(ProjectedExtent, MultibandTile)] =
+    val inputRdd: RDD[(ProjectedExtent, MultibandTile)] = {
     sc.hadoopMultibandGeoTiffRDD(inputPath)
+    }
 
     // Use the "TileLayerMetadata.fromRdd" call to find the zoom
     // level that the closest match to the resolution of our source image,

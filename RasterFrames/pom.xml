@@ -24,7 +24,6 @@
             <artifactId>spark-core_2.11</artifactId>
             <version>2.4.5</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib_2.11</artifactId>
@@ -35,31 +34,21 @@
             <artifactId>geotrellis-spark_2.11</artifactId>
             <version>1.2.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.astraea/rasterframes -->
         <dependency>
             <groupId>io.astraea</groupId>
             <artifactId>rasterframes_2.11</artifactId>
             <version>0.7.0-RC4</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.astraea/rasterframes-datasource -->
         <dependency>
             <groupId>io.astraea</groupId>
             <artifactId>rasterframes-datasource_2.11</artifactId>
             <version>0.7.0-RC4</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.astraea/rasterframes-experimental -->
         <dependency>
             <groupId>io.astraea</groupId>
             <artifactId>rasterframes-experimental_2.11</artifactId>
             <version>0.7.0-RC4</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.astraea/rf -->
-<!--        <dependency>-->
-<!--            <groupId>io.astraea</groupId>-->
-<!--            <artifactId>rf_2.11</artifactId>-->
-<!--            <version>0.6.1-RC2</version>-->
-<!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/io.astraea/pyrasterframes -->
         <dependency>
             <groupId>io.astraea</groupId>
             <artifactId>pyrasterframes_2.11</artifactId>
