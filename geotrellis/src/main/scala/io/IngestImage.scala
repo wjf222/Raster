@@ -82,34 +82,34 @@ object IngestImage {
       .reduceByKey(_.localMax(_)).stitch()
     val colorMap = ColorMap.fromStringDouble(ConfigFactory.load().getString("tutorial.ndviColormap")).get
 
-    dont.renderPng(colorMap).write("data/geeotrellis/nvdi.png")
+    dont.renderPng(colorMap).write("data/output/geotrellis-nvdi.png")
 //    val raster: Raster[Tile] = Raster(dont)
 //    GeoTiff(dont, rasterMetaData.crs).write("data/geeotrellis/nvdi.png")
-    print(dont)
-    // We'll be tiling the images using a zoomed layout scheme
-    // in the web mercator format (which fits the slippy map tile specification).
-    // We'll be creating 256 x 256 tiles.
-    val layoutScheme = ZoomedLayoutScheme(WebMercator, tileSize = 256)
-
-    // We need to reproject the tiles to WebMercator
-    val (zoom, reprojected): (Int, RDD[(SpatialKey, MultibandTile)] with Metadata[TileLayerMetadata[SpatialKey]]) =
-      MultibandTileLayerRDD(tiled, rasterMetaData)
-        .reproject(WebMercator, layoutScheme, Bilinear)
-
-    // Create the attributes store that will tell us information about our catalog.
-    val attributeStore = FileAttributeStore(outputPath)
-
-    // Create the writer that we will use to store the tiles in the local catalog.
-    val writer = FileLayerWriter(attributeStore)
-
-    // Pyramiding up the zoom levels, write our tiles out to the local file system.
-    Pyramid.upLevels(reprojected, layoutScheme, zoom, Bilinear) { (rdd, z) =>
-      val layerId = LayerId("landsat", z)
-      // If the layer exists already, delete it out before writing
-      if (attributeStore.layerExists(layerId)) {
-        new FileLayerManager(attributeStore).delete(layerId)
-      }
-      writer.write(layerId, rdd, ZCurveKeyIndexMethod)
-    }
+//    print(dont)
+//    // We'll be tiling the images using a zoomed layout scheme
+//    // in the web mercator format (which fits the slippy map tile specification).
+//    // We'll be creating 256 x 256 tiles.
+//    val layoutScheme = ZoomedLayoutScheme(WebMercator, tileSize = 256)
+//
+//    // We need to reproject the tiles to WebMercator
+//    val (zoom, reprojected): (Int, RDD[(SpatialKey, MultibandTile)] with Metadata[TileLayerMetadata[SpatialKey]]) =
+//      MultibandTileLayerRDD(tiled, rasterMetaData)
+//        .reproject(WebMercator, layoutScheme, Bilinear)
+//
+//    // Create the attributes store that will tell us information about our catalog.
+//    val attributeStore = FileAttributeStore(outputPath)
+//
+//    // Create the writer that we will use to store the tiles in the local catalog.
+//    val writer = FileLayerWriter(attributeStore)
+//
+//    // Pyramiding up the zoom levels, write our tiles out to the local file system.
+//    Pyramid.upLevels(reprojected, layoutScheme, zoom, Bilinear) { (rdd, z) =>
+//      val layerId = LayerId("landsat", z)
+//      // If the layer exists already, delete it out before writing
+//      if (attributeStore.layerExists(layerId)) {
+//        new FileLayerManager(attributeStore).delete(layerId)
+//      }
+//      writer.write(layerId, rdd, ZCurveKeyIndexMethod)
+//    }
   }
 }
