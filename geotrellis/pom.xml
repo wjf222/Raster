@@ -38,7 +38,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.wzy.edgedetection.Application</mainClass>
+                            <mainClass>io.cacul</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
