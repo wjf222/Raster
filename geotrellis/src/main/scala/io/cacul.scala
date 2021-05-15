@@ -18,7 +18,6 @@ import geotrellis.spark.io.index.ZCurveKeyIndexMethod
 import geotrellis.spark.render.withSpatialTileRDDRenderMethods
 import geotrellis.spark.tiling.{FloatingLayoutScheme, ZoomedLayoutScheme}
 import geotrellis.vector.ProjectedExtent
-import io.IngestImage.{inputPath, outputPath}
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.Path
 import org.apache.spark.rdd.RDD
@@ -32,16 +31,17 @@ object cacul {
     val conf =
       new SparkConf()
 //        .setMaster("local[*]")
-        .setAppName("Spark Tiler")
+        .setAppName("Geotrellis localGreater")
         .set("hdfsBasePath","hdfs://namenode:8020")
         .set("spark-master","10.101.241.5")
         .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
         .set("spark.kryo.registrator", "geotrellis.spark.io.kryo.KryoRegistrator")
 //        .setIfMissing("spark.kryoserializer.buffer.max","1024m")
 //        .setIfMissing("spark.kryoserializer.buffer","512m")
-        .setIfMissing("spark.driver.maxResultSize","4g")
+//        .setIfMissing("spark.driver.maxResultSize","4g")
 //    val hdfsBasePath:String =
     implicit val sc = new SparkContext(conf)
+    sc.setLogLevel("WARN")
     val hdfs_prev = sc.getConf.get("hdfsBasePath")
     maskedPath = hdfs_prev + maskedPath
     resultPath = hdfs_prev + resultPath
@@ -55,7 +55,7 @@ object cacul {
         .tileToLayout(rasterMetaData.cellType, rasterMetaData.layout, Bilinear)
         .repartition(100)
     }
-    val result = tiled.mapValues { tile =>
+    tiled.mapValues { tile =>
       tile.localGreater(1)
     }.saveAsObjectFile(resultPath)
 //    val layoutScheme = ZoomedLayoutScheme(WebMercator,tileSize = 128)

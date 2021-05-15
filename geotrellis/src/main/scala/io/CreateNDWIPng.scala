@@ -25,9 +25,9 @@ object CreateNDWIPng {
       // Use the combineDouble method to map over the red and infrared values
       // and perform the NDVI calculation.
       println("Performing NDWI calculation...")
-      tile.combineDouble(MaskBandsRandGandNIR.G_BAND, MaskBandsRandGandNIR.NIR_BAND) { (g: Double, ir: Double) =>
-        Calculations.ndwi(g, ir);
-      }
+//      tile.combineDouble(MaskBandsRandGandNIR.G_BAND, MaskBandsRandGandNIR.NIR_BAND) { (g: Double, ir: Double) =>
+//        Calculations.ndwi(g, ir);
+//      }
     }
 
     // Get color map from the application.conf settings file.
@@ -36,6 +36,6 @@ object CreateNDWIPng {
     // Render this NDVI using the color breaks as a PNG,
     // and write the PNG to disk.
     println("Rendering PNG and saving to disk...")
-    ndwi.renderPng(colorMap).write(ndwiPath)
+//    ndwi.renderPng(colorMap).write(ndwiPath)
   }
 }

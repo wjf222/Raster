@@ -7,13 +7,13 @@ import geotrellis.spark.io.AttributeStore.Fields.metadata
 import geotrellis.spark.io.hadoop.HadoopSparkContextMethodsWrapper
 import geotrellis.spark.tiling.{FloatingLayoutScheme, Tiler}
 import geotrellis.vector.{Extent, ProjectedExtent}
-import io.IngestImage.inputPath
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
 import geotrellis.raster.io.geotiff.GeoTiff
 
 object RDDToTile {
   def main(args: Array[String]): Unit = {
+    val inputPath:String=""
     val conf =
       new SparkConf()
         .setMaster("local[*]")

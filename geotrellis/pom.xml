@@ -13,16 +13,18 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.11</artifactId>
             <version>2.4.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.locationtech.geotrellis</groupId>
-            <artifactId>geotrellis-spark_2.11</artifactId>
-            <version>2.1.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.11</artifactId>
             <version>2.4.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.locationtech.geotrellis</groupId>
+            <artifactId>geotrellis-spark_2.11</artifactId>
+            <version>2.1.0</version>
         </dependency>
     </dependencies>
     <build>

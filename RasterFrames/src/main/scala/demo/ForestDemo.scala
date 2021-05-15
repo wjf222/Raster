@@ -59,6 +59,7 @@ object ForestDemo {
     val scaledRFs = completeRFs.map { rf => rf.withColumn("ndvi_s", localMultiplyScalar($"ndvi", 500.0))
       .withColumn("grvi_s", localMultiplyScalar($"grvi", 500.0)) }
 
+    scaledRFs
     // PIPLINE
     import astraea.spark.rasterframes.ml.TileExploder
 

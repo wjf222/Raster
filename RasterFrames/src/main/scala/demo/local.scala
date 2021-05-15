@@ -1,19 +1,15 @@
 package demo
 
-import astraea.spark.rasterframes.{WithProjectedRasterMethods, WithSparkSessionMethods}
-import geotrellis.raster._
-import geotrellis.raster.io.geotiff.SinglebandGeoTiff
-import geotrellis.raster.render.{ColorMap, ColorRamp, RGBA}
-import org.apache.spark.sql.SparkSession
-import astraea.spark.rasterframes._
+import astraea.spark.rasterframes.{WithSparkSessionMethods, _}
 import astraea.spark.rasterframes.datasource.geotiff.DataFrameReaderHasGeoTiffFormat
-import com.typesafe.config.ConfigFactory
+import geotrellis.raster._
 import org.apache.spark.SparkConf
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.udf
 
 import java.net.URI
 
-object nvdi {
+object local {
   def main(args: Array[String]): Unit = {
     val sparkconf: SparkConf = new SparkConf().setAppName("RasterFrames")
 //      .setMaster("local[*]")
@@ -23,29 +19,22 @@ object nvdi {
     spark.sparkContext.setLogLevel("ERROR")
 //    val config = ConfigFactory.load()
     val hdfsBasePath:String = "hdfs://namenode:8020"
-    val nir_url = hdfsBasePath + args(0)
-//    val nir_url = "file:/C:/Users/DELL/IdeaProjects/Raster/data/brazil_1/band2.tif"
-    val red_url = hdfsBasePath + args(1)
-//    val red_url = "file:/C:/Users/DELL/IdeaProjects/Raster/data/brazil_1/band5.tif"
-    val output_url = hdfsBasePath + args(2)
+    val red_url = hdfsBasePath + args(0)
+    val output_url = hdfsBasePath + args(1)
 //    val output_url = "file:/C:/Users/DELL/IdeaProjects/Raster/data/brazil_1/band5-nvdi.tif"
     import spark.implicits._
 
     spark.read
     def redBand = spark.read.geotiff.loadRF(new URI(red_url)).withColumnRenamed("tile","red_band").asRF
-    def nirBand = spark.read.geotiff.loadRF(new URI(nir_url)).withColumnRenamed("tile","nir_band").asRF
-
     // Define UDF for computing NDVI from red and NIR bands
-    val ndvi = udf((red: Tile, nir: Tile) ⇒ {
-      val redd = red.convert(DoubleConstantNoDataCellType)
-      val nird = nir.convert(DoubleConstantNoDataCellType)
-      (nird - redd)/(nird + redd)
+    val ndvi = udf((red: Tile) ⇒ {
+      val bandd = red.convert(IntConstantNoDataCellType)
+      bandd.localGreater(1)
     })
 
     // We use `asRF` to indicate we know the structure still conforms to RasterFrame constraints
-    val nirBand2 = nirBand.drop("bounds","metadata").asRF
-    val r_nir_band = redBand.spatialJoin(nirBand2)
-    val rf2 = r_nir_band.withColumn("ndvi", ndvi($"red_band", $"nir_band")).asRF
+    val r_nir_band = redBand
+    val rf2 = r_nir_band.withColumn("ndvi", ndvi($"red_band")).asRF
 
     for (i <- 0 to rf2.columns.length-1)
       println(rf2.columns(i))

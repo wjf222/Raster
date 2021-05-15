@@ -77,7 +77,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>demo.nvdi</mainClass>
+                            <mainClass>demo.local</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
